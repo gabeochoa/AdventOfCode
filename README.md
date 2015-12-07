@@ -1,7 +1,7 @@
 # AdventOfCode
 
 
-This is a repo holding my solutions for the [Advent of Code](adventofcode.com) 2015 puzzles. 
+This is a repo holding my solutions for the [Advent of Code](http://adventofcode.com) 2015 puzzles. 
 
 I decided it might be nice to learn a bit while doing this so I will be doing the puzzles in a couple different languages.
 Current List:
