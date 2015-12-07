@@ -10,6 +10,7 @@ Current List:
 * Haskell
 
 Days Complete:
-[~~1~~](https://www.youtube.com/watch?v=XsacUAM8Q1w),~~2~~,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+* [~~1~~](https://www.youtube.com/watch?v=XsacUAM8Q1w)
+* ~~2~~
 
 I will also be uploading a video of me completing my first try (blind) of the puzzle for that day. 
