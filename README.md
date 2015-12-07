@@ -8,6 +8,7 @@ Current List:
 * Python 
 * Ruby 
 * Haskell
+* C++
 
 Days Complete:
 * [~~1~~](https://www.youtube.com/watch?v=XsacUAM8Q1w)
