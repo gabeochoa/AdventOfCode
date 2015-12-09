@@ -9,8 +9,6 @@ def santa():
 	visited = set()
 	x = 0
 	y = 0
-	a = 0
-	b = 0
 	visited.add((x,y))
 	for char in data[0]:	
 		if(char == '>'):
@@ -23,6 +21,7 @@ def santa():
 			y-=1
 		visited.add((x,y))
 	print(len(visited))
+
 def robot():
 	visited = set()
 	x = 0
