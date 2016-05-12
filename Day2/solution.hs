@@ -19,18 +19,14 @@ removeItem x (y:ys) = if (x == y) then ys else y : (removeItem x ys)
 removeMin :: [Int] -> [Int]
 removeMin a = (removeItem (minimum a) a)
 
-smallestTwo :: [Int] -> [Int]
-smallestTwo a = [ (minimum a) , (minimum (removeMin a)) ]
+smallestTwo :: [Int] -> (Int, Int)
+smallestTwo a = ( (minimum a) , (minimum (removeMin a)) )
 
-multt :: [Int] -> Int
-multt (a:b:c:_) = (a*b*c)
-multt _ = 0
-
-rib :: [Int] -> Int
-rib (a:b:_) = a*2 + b*2 
+rib :: (Int, Int) -> Int
+rib (a,b) = a*2 + b*2 
 
 ribbonLength :: [Int] -> Int
-ribbonLength xs = (multt xs) + (rib (smallestTwo xs))
+ribbonLength xs = (product xs) + (rib (smallestTwo xs))
 
 def :: String -> Int
 def st = ribbonLength (map read (split 'x' st))
