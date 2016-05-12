@@ -12,13 +12,6 @@ surfaceArea _ = undefined
 abc :: String -> Int
 abc st = surfaceArea (map read (split 'x' st))
 
-
---def getRibbonLength(length, width, height):
---    vol = length*width*height
---    s = (sorted([length, width, height]))[:2]
---    ribbon = s[0]*2 + s[1]*2
-----    return vol + ribbon
-
 removeItem :: Int -> [Int] -> [Int]
 removeItem _ [] = []
 removeItem x (y:ys) = if (x == y) then ys else y : (removeItem x ys)
