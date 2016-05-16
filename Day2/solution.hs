@@ -1,6 +1,5 @@
 import System.IO
 
-
 split delimiter = foldr f [[]] 
     where f c l@(x:xs) | c == delimiter = []:l
                        | otherwise = (c:x):xs
