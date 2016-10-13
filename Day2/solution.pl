@@ -3,19 +3,19 @@ open(my $in, "<", "test.txt") or die "cant open test.txt";
 
 sub getsmallest2
 {
-    my $a = shift; my $b = shift;
+    my ($a, $b) = @_;
     return $a unless $b lt $a;
 }
 
 sub getsmallest3
 {
-    my $a = shift; my $b = shift; my $c = shift;
+    my ($a, $b, $c) = @_;
     return getsmallest2(getsmallest2($a, $b), $c);
 }
 
 sub getSurfaceArea3
 {
-    my $length = shift; my $width = shift; my $height = shift;
+    my ($length, $width, $height) = @_;
     my $sA = 2 * $length * $width + 2 * $width * $height + 2 * $length * $height;
     my @extra = sort { $a <=> $b } ($length*$width, $width*$height,$length*$height);
     return $sA + $extra[0];
@@ -23,7 +23,7 @@ sub getSurfaceArea3
 
 sub getRibbonLen3
 {
-    my $length = shift; my $width = shift; my $height = shift;
+    my ($length, $width, $height) = @_;
     my $vol = $length * $width * $height;
     my @sorted = sort { $a <=> $b } ($length,$width,$height);
     return $vol + 2 * $sorted[0] + 2 * $sorted[1];
